@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Implementtation Structure &mdash; Medtech-Heart-Vue 0.0.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>6. Components &mdash; Medtech-Heart-Vue 0.0.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
@@ -16,8 +16,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1. Assets" href="01_assets.html" />
-    <link rel="prev" title="3. UI Framework" href="../technology/03_ui_framework.html" /> 
+    <link rel="prev" title="5. Pages" href="05_pages.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,13 +38,13 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technology/index.html">Technology</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Implementtation Structure</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Implementtation Structure</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="01_assets.html">1. Assets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_layout.html">2. Layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_store.html">3. Store</a></li>
 <li class="toctree-l2"><a class="reference internal" href="04_static.html">4. Static</a></li>
 <li class="toctree-l2"><a class="reference internal" href="05_pages.html">5. Pages</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06_components.html">6. Components</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Components</a></li>
 </ul>
 </li>
 </ul>
@@ -64,9 +63,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Implementtation Structure</li>
+          <li><a href="index.html">Implementtation Structure</a> &raquo;</li>
+      <li><span class="section-number">6. </span>Components</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/implementation_structure/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/implementation_structure/06_components.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -74,27 +74,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="implementtation-structure">
-<h1>Implementtation Structure<a class="headerlink" href="#implementtation-structure" title="Permalink to this headline">¶</a></h1>
-<p>The following section provides a higher level overview of the application structure with notes about some important files/folders and would be helpful to understand the coordination of various elements.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="01_assets.html">1. Assets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_layout.html">2. Layout</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_store.html">3. Store</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_static.html">4. Static</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_pages.html">5. Pages</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_components.html">6. Components</a></li>
+  <div class="section" id="components">
+<h1><span class="section-number">6. </span>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/06_components.jpg" src="../_images/06_components.jpg" />
+<style>
+
+.red {
+    color:red;
+}
+.blue {
+    color:blue;
+}
+.green {
+    color:green;
+}
+
+</style><p><span class="green">COMPONENTS</span></p>
+<ul class="simple">
+<li><p>navigation/LeftPane.vue is included in default layout, and depending
+upon the route, it displays either about/AboutUs.vue OR
+topics/Panel.vue components.</p></li>
+<li><p>navigation/RightPane.vue is used in _slug/index.vue page and
+facilitates displaying various features like heart rate, model and
+traces though their components i.e model/HeartRate.vue,
+model/Model.vue and model/Traces.vue respectively. It also displays
+topics/VideoPlayer.vue component, as layover when the video icon is
+clicked.</p></li>
 </ul>
-</div>
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../technology/03_ui_framework.html" class="btn btn-neutral float-left" title="3. UI Framework" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="01_assets.html" class="btn btn-neutral float-right" title="1. Assets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="05_pages.html" class="btn btn-neutral float-left" title="5. Pages" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

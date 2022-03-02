@@ -1,4 +1,4 @@
-Layout
+Store
 ===========
 
 .. image:: images/03_store.jpg

@@ -7,8 +7,6 @@ The following section provides a higher level overview of the application struct
     :maxdepth: 2
     :numbered: 2
 
-
-
     01_assets
     02_layout
     03_store

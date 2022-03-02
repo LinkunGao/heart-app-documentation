@@ -2,7 +2,7 @@ Pages
 ===========
 
 .. image:: images/05_pages.jpg
-.. include:: style.rst
+.. include:: ../style.rst
 
 :green:`PAGES`
 
@@ -23,5 +23,5 @@ Pages
    pages with dynamic routes. Also, the content of home page are also
    maintained in the similar way as other topics, i.e. through
    topics.json, there is nothing to show at index.vue
-   
+
 -  about/index.vue is the page for about section and has route “/about”.

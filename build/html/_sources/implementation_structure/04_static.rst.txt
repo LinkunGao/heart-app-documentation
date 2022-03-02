@@ -2,7 +2,7 @@ Static
 ===========
 
 .. image:: images/04_static.jpg
-.. include:: style.rst
+.. include:: ../style.rst
 
 :green:`STATIC`
 

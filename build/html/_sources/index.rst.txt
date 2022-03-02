@@ -9,9 +9,9 @@ Medtech-Heart-Vue's documentation
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   
+
    introduction/index
    technology/index
    implementation_structure/index
-
-
+   important_note/index
+   FAQs/index

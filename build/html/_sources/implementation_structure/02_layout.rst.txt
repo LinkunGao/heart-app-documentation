@@ -2,7 +2,7 @@ Layout
 ===========
 
 .. image:: images/02_layout.jpg
-.. include:: style.rst
+.. include:: ../style.rst
 
 :green:`Layout`
 

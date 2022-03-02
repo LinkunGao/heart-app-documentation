@@ -2,7 +2,7 @@ Assets
 ===========
 
 .. image:: images/01_assets.jpg
-.. include:: style.rst
+.. include:: ../style.rst
 :green:`ASSETS`
 
 -  assets/data stores information related to various topics

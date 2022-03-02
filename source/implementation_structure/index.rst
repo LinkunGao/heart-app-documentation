@@ -10,4 +10,5 @@ The following section provides a higher level overview of the application struct
 
 
     01_assets
+    02_layout
 

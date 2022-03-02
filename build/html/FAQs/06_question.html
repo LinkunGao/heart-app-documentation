@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3. What is the difference between title and heading of topics/subtopics in topics.json? &mdash; Medtech-Heart-Vue 0.0.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>6. How to understand the path specified for images, videos etc in these data files? &mdash; Medtech-Heart-Vue 0.0.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
@@ -16,8 +16,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4. What is the category field in subtopics data?" href="04_question.html" />
-    <link rel="prev" title="2. How to add a new topic?" href="02_question.html" /> 
+    <link rel="prev" title="5. I have added a new topic, why is it shown with disabled tab in the menu?" href="05_question.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,10 +43,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FAQs</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="01_question.html">1. Which data files are used to manage content and where are they located?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_question.html">2. How to add a new topic?</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">3. What is the difference between <span class="red">title</span> and <span class="red">heading</span> of topics/subtopics in topics.json?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_question.html">3. What is the difference between <span class="red">title</span> and <span class="red">heading</span> of topics/subtopics in topics.json?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="04_question.html">4. What is the <span class="blue">category</span> field in subtopics data?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="05_question.html">5. I have added a new topic, why is it shown with disabled tab in the menu?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06_question.html">6. How to understand the path specified for images, videos etc in these data files?</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. How to understand the path specified for images, videos etc in these data files?</a></li>
 </ul>
 </li>
 </ul>
@@ -67,9 +66,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">FAQs</a> &raquo;</li>
-      <li><span class="section-number">3. </span>What is the difference between <span class="red">title</span> and <span class="red">heading</span> of topics/subtopics in topics.json?</li>
+      <li><span class="section-number">6. </span>How to understand the path specified for images, videos etc in these data files?</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/FAQs/03_question.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/FAQs/06_question.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -77,7 +76,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <style>
+  <div class="section" id="how-to-understand-the-path-specified-for-images-videos-etc-in-these-data-files">
+<h1><span class="section-number">6. </span>How to understand the path specified for images, videos etc in these data files?<a class="headerlink" href="#how-to-understand-the-path-specified-for-images-videos-etc-in-these-data-files" title="Permalink to this headline">¶</a></h1>
+<style>
 
 .red {
     color:red;
@@ -89,19 +90,15 @@
     color:green;
 }
 
-</style><div class="section" id="what-is-the-difference-between-title-and-heading-of-topics-subtopics-in-topics-json">
-<h1><span class="section-number">3. </span>What is the difference between <span class="red">title</span> and <span class="red">heading</span> of topics/subtopics in topics.json?<a class="headerlink" href="#what-is-the-difference-between-title-and-heading-of-topics-subtopics-in-topics-json" title="Permalink to this headline">¶</a></h1>
-<p>The <span class="blue">title</span> is used as a caption in menu buttons whereas <span class="blue">heading</span> are actual headlines that appear at the top of the left panel for each topic/subtopic. (screenshots below)</p>
-<img alt="../_images/q3_1.jpg" src="../_images/q3_1.jpg" />
-<img alt="../_images/q3_2.jpg" src="../_images/q3_2.jpg" />
+</style><img alt="../_images/q6.jpg" src="../_images/q6.jpg" />
+<p>The specified paths consider the <span class="blue">static</span> folder of the application as the root folder. For example, the path shown for the video in the screenshot above assumes that the  <span class="blue">videos</span> folder exists in the <span class="blue">static</span> folder of the application.</p>
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="02_question.html" class="btn btn-neutral float-left" title="2. How to add a new topic?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="04_question.html" class="btn btn-neutral float-right" title="4. What is the category field in subtopics data?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="05_question.html" class="btn btn-neutral float-left" title="5. I have added a new topic, why is it shown with disabled tab in the menu?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

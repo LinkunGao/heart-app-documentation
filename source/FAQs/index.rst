@@ -11,3 +11,4 @@ FAQs
     03_question
     04_question
     05_question
+    06_question

@@ -37,8 +37,8 @@ The **left pane** includes:
 
 -  Subheading
 
--Panel (component), displaying contents of clicked subtopic from (either
-markdown or xml, as discussed above in data section)
+-  Panel (component), displaying contents of clicked subtopic from
+   (either markdown or xml, as discussed above in data section)
 
 -  Menu (the tabs and subtabs populated based on topics.json)
 

@@ -64,5 +64,5 @@ html_logo = '_static/abi-vrw-rgb.png'
 #         ],
 #      }
 html_css_files = [
-    '_static/theme_overrides.css',
+    'css/theme_overrides.css',
 ]

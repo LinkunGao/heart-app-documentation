@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>1. Heart App Overview &mdash; Medtech-Heart-Vue 0.0.1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -138,6 +139,81 @@
 <p>Check the diagram below to understand the change events of these components.</p>
 <p><span class="red">Note:</span> Since the work on the Model component will be done at the end when the rest of the app is completed, the props for it may not be final. Right now, when I refer to the Model component, it includes everything i.e. the heart model, the ECG, pressure and heart rate modifier.</p>
 <img alt="../_images/01_intro_5.jpg" src="../_images/01_intro_5.jpg" />
+<div class="highlight-bash notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="s2">&quot;failure&quot;</span>:<span class="o">{</span>
+<span class="s2">&quot;title&quot;</span>:<span class="s2">&quot;Failure&quot;</span>,
+<span class="s2">&quot;heading&quot;</span>:<span class="s2">&quot;Heart Failure&quot;</span>,
+<span class="s2">&quot;icon&quot;</span>:<span class="s2">&quot;mdi-heart-off&quot;</span>,
+<span class="s2">&quot;subTopics&quot;</span>:<span class="o">{</span>
+    <span class="s2">&quot;healthy&quot;</span>:<span class="o">{</span>
+    <span class="s2">&quot;title&quot;</span>:<span class="s2">&quot;Healthy&quot;</span>,
+    <span class="s2">&quot;heading&quot;</span>:<span class="s2">&quot;Chronic Problems&quot;</span>,
+    <span class="s2">&quot;icon&quot;</span>:<span class="s2">&quot;mdi-account-heart&quot;</span>,
+    <span class="s2">&quot;dataFile&quot;</span>:<span class="s2">&quot;failure-healthy&quot;</span>,
+    <span class="s2">&quot;category&quot;</span>:<span class="s2">&quot;success&quot;</span>,
+    <span class="s2">&quot;ecg&quot;</span>:<span class="o">{</span><span class="s2">&quot;name&quot;</span>:<span class="s2">&quot;NoFailure&quot;</span>,<span class="s2">&quot;path&quot;</span>:<span class="s2">&quot;ECG/NormalECG.json&quot;</span>,<span class="s2">&quot;description&quot;</span>:<span class="s2">&quot;electrical pulses make the heart muscle contract&quot;</span><span class="o">}</span>,
+    <span class="s2">&quot;lvp&quot;</span>:<span class="o">{</span><span class="s2">&quot;name&quot;</span>:<span class="s2">&quot;NoFailure&quot;</span>,<span class="s2">&quot;path&quot;</span>:<span class="s2">&quot;LVP/NormalLVP.json&quot;</span>,<span class="s2">&quot;description&quot;</span>:<span class="s2">&quot;muscle contraction generates pump pressure&quot;</span><span class="o">}</span>,
+    <span class="s2">&quot;model&quot;</span>:<span class="o">{</span><span class="s2">&quot;name&quot;</span>:<span class="s2">&quot;NoInfarct&quot;</span><span class="o">}</span>
+    <span class="o">}</span>,
+    <span class="s2">&quot;compensated&quot;</span>:<span class="o">{</span>
+    <span class="s2">&quot;title&quot;</span>:<span class="s2">&quot;Compensated&quot;</span>,
+    <span class="s2">&quot;heading&quot;</span>:<span class="s2">&quot;Compensated&quot;</span>,
+    <span class="s2">&quot;icon&quot;</span>:<span class="s2">&quot;mdi-heart-cog&quot;</span>,
+    <span class="s2">&quot;dataFile&quot;</span>:<span class="s2">&quot;failure-compensated&quot;</span>,
+    <span class="s2">&quot;category&quot;</span>:<span class="s2">&quot;warning&quot;</span>,
+    <span class="s2">&quot;ecg&quot;</span>:<span class="o">{</span><span class="s2">&quot;name&quot;</span>:<span class="s2">&quot;CompensatedFailure&quot;</span>,<span class="s2">&quot;path&quot;</span> : <span class="s2">&quot;ECG/DiastolicECG_shifted.json&quot;</span>,<span class="s2">&quot;description&quot;</span>:<span class="s2">&quot;electrical pulses make the heart muscle contract&quot;</span><span class="o">}</span>,
+    <span class="s2">&quot;lvp&quot;</span>:<span class="o">{</span><span class="s2">&quot;name&quot;</span>:<span class="s2">&quot;CompensatedFailure&quot;</span>,<span class="s2">&quot;path&quot;</span> : <span class="s2">&quot;LVP/DiastolicLVP_shifted.json&quot;</span>,<span class="s2">&quot;description&quot;</span>:<span class="s2">&quot;muscle contraction generates pump pressure&quot;</span><span class="o">}</span>,
+    <span class="s2">&quot;model&quot;</span>:<span class="o">{</span><span class="s2">&quot;name&quot;</span>:<span class="s2">&quot;NoInfarct&quot;</span><span class="o">}</span>
+    <span class="o">}</span>,
+    <span class="s2">&quot;decompensated&quot;</span>:<span class="o">{</span>
+    <span class="s2">&quot;title&quot;</span>:<span class="s2">&quot;Decompensated&quot;</span>,
+    <span class="s2">&quot;heading&quot;</span>:<span class="s2">&quot;Decompensated&quot;</span>,
+    <span class="s2">&quot;icon&quot;</span>:<span class="s2">&quot;mdi-heart-remove&quot;</span>,
+    <span class="s2">&quot;dataFile&quot;</span>:<span class="s2">&quot;failure-decompensated&quot;</span>,
+    <span class="s2">&quot;category&quot;</span>:<span class="s2">&quot;error&quot;</span>,
+    <span class="s2">&quot;ecg&quot;</span>:<span class="o">{</span><span class="s2">&quot;name&quot;</span>:<span class="s2">&quot;DecompensatedFailure&quot;</span>,<span class="s2">&quot;path&quot;</span> : <span class="s2">&quot;ECG/SystolicECG_shifted.json&quot;</span>,<span class="s2">&quot;description&quot;</span>:<span class="s2">&quot;electrical pulses make the heart muscle contract&quot;</span><span class="o">}</span>,
+    <span class="s2">&quot;lvp&quot;</span>:<span class="o">{</span><span class="s2">&quot;name&quot;</span>:<span class="s2">&quot;DecompensatedFailure&quot;</span>,<span class="s2">&quot;path&quot;</span> : <span class="s2">&quot;LVP/SystolicLVP_shifted.json&quot;</span>,<span class="s2">&quot;description&quot;</span>:<span class="s2">&quot;thin-walled hearts struggle to maintain pump pressure&quot;</span><span class="o">}</span>,
+    <span class="s2">&quot;model&quot;</span>:<span class="o">{</span><span class="s2">&quot;name&quot;</span>:<span class="s2">&quot;NoInfarct&quot;</span><span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 

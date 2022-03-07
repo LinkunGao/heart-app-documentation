@@ -49,3 +49,46 @@ Check the diagram below to understand the change events of these components.
 :red:`Note:` Since the work on the Model component will be done at the end when the rest of the app is completed, the props for it may not be final. Right now, when I refer to the Model component, it includes everything i.e. the heart model, the ECG, pressure and heart rate modifier.
 
 .. image:: images/01_intro_5.jpg
+
+
+
+.. code-block:: bash
+    :linenos:
+
+    "failure":{
+    "title":"Failure",
+    "heading":"Heart Failure",
+    "icon":"mdi-heart-off",
+    "subTopics":{
+        "healthy":{
+        "title":"Healthy",
+        "heading":"Chronic Problems",     
+        "icon":"mdi-account-heart",
+        "dataFile":"failure-healthy",
+        "category":"success",
+        "ecg":{"name":"NoFailure","path":"ECG/NormalECG.json","description":"electrical pulses make the heart muscle contract"},
+        "lvp":{"name":"NoFailure","path":"LVP/NormalLVP.json","description":"muscle contraction generates pump pressure"},
+        "model":{"name":"NoInfarct"}
+        },
+        "compensated":{
+        "title":"Compensated",
+        "heading":"Compensated",
+        "icon":"mdi-heart-cog",
+        "dataFile":"failure-compensated",
+        "category":"warning",
+        "ecg":{"name":"CompensatedFailure","path" : "ECG/DiastolicECG_shifted.json","description":"electrical pulses make the heart muscle contract"},
+        "lvp":{"name":"CompensatedFailure","path" : "LVP/DiastolicLVP_shifted.json","description":"muscle contraction generates pump pressure"},
+        "model":{"name":"NoInfarct"}
+        },
+        "decompensated":{
+        "title":"Decompensated",
+        "heading":"Decompensated",
+        "icon":"mdi-heart-remove",
+        "dataFile":"failure-decompensated",
+        "category":"error",
+        "ecg":{"name":"DecompensatedFailure","path" : "ECG/SystolicECG_shifted.json","description":"electrical pulses make the heart muscle contract"},
+        "lvp":{"name":"DecompensatedFailure","path" : "LVP/SystolicLVP_shifted.json","description":"thin-walled hearts struggle to maintain pump pressure"},
+        "model":{"name":"NoInfarct"}
+        }
+    }
+    }
